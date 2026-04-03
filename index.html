@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bub's Bar | O rolê de Guarulhos</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,6 +19,7 @@
             <nav class="menu">
                 <a href="#hero">início</a>
                 <a href="#eventos">eventos</a>
+                <a href="#cardapio">cardápio</a>
                 <a href="#informacoes">informações</a>
                 <a href="#contato">contato</a>
             </nav>
@@ -39,29 +41,150 @@
 
     <section id="eventos" class="eventos reveal">
         <h2 class="reveal-item">Próximos Eventos</h2>
-        <div class="event-grid">
-            <div class="event-card reveal-item">
-                <img src="kljay.jpg" alt="kljay">
-                <div class="event-info">
-                    <h3>KL JAY</h3>
-                    <p class="data">Sexta • Trap Night</p>
-                    <p class="preco">R$30 <small>ou 12x R$5.99</small></p>
-                    <div class="btn-container">
-                        <button class="ingresso">comprar</button>
+        <div class="swiper mySwiper reveal-item">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="event-card">
+                        <img src="kljay.jpg" alt="kljay">
+                        <div class="event-info">
+                            <h3>KL JAY</h3>
+                            <p class="data">Sexta • Trap Night</p>
+                            <p class="preco">R$30 <small>ou 12x R$5.99</small></p>
+                            <div class="btn-container">
+                                <button class="ingresso">comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="event-card">
+                        <img src="matue.jpg" alt="Matuê">
+                        <div class="event-info">
+                            <h3>Matuê</h3>
+                            <p class="data">Sábado • Show Especial</p>
+                            <p class="preco">R$30 <small>ou 12x R$5.99</small></p>
+                            <div class="btn-container">
+                                <button class="ingresso">comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="event-card">
+                        <img src="veigh.jpg" alt="Veigh">
+                        <div class="event-info">
+                            <h3>VEIGH</h3>
+                            <p class="data">Sexta • Dos Prédios</p>
+                            <p class="preco">R$30 <small>ou 12x R$5.99</small></p>
+                            <div class="btn-container">
+                                <button class="ingresso">comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="event-card">
+                        <img src="teto.jpg" alt="Teto">
+                        <div class="event-info">
+                            <h3>TETO</h3>
+                            <p class="data">Sábado • Vibe de Luxo</p>
+                            <p class="preco">R$30 <small>ou 12x R$5.99</small></p>
+                            <div class="btn-container">
+                                <button class="ingresso">comprar</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section id="cardapio" class="cardapio reveal">
+        <h2 class="reveal-item">Nossas Especialidades</h2>
+        <p class="subtitle reveal-item">Os favoritos da galera 🔥</p>
     
-            <div class="event-card reveal-item">
-                <img src="matue.jpg" alt="Matuê">
-                <div class="event-info">
-                    <h3>Matuê</h3>
-                    <p class="data">Sábado • Show Especial</p>
-                    <p class="preco">R$30 <small>ou 12x R$5.99</small></p>
-                    <div class="btn-container">
-                        <button class="ingresso">comprar</button>
+        <div class="swiper swiperCardapio reveal-item">
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide">
+                    <div class="cardapio-item">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=600" alt="Burguer">
+                        <div class="item-overlay"><div class="item-text"><h3>Bacon Haze</h3><span class="preco">R$ 38,00</span></div></div>
                     </div>
                 </div>
+    
+                <div class="swiper-slide">
+                    <div class="cardapio-item">
+                        <img src="https://images.unsplash.com/photo-1587223962930-cb7f31384c19?q=80&w=600" alt="Drink">
+                        <div class="item-overlay"><div class="item-text"><h3>Gin Green Apple</h3><span class="preco">R$ 36,00</span></div></div>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide">
+                    <div class="cardapio-item">
+                        <img src="copo.jpg" alt="Copão">
+                        <div class="item-overlay"><div class="item-text"><h3>Copão Smirnoff</h3><span class="preco">R$ 35,00</span></div></div>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide">
+                    <div class="cardapio-item">
+                        <img src="batata.jpg" alt="Batata">
+                        <div class="item-overlay"><div class="item-text"><h3>Batata Bacon 🔥</h3><span class="preco">R$ 29,00</span></div></div>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide">
+                    <div class="cardapio-item">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=600" alt="Pizza">
+                        <div class="item-overlay"><div class="item-text"><h3>Pizza Bub's</h3><span class="preco">R$ 45,00</span></div></div>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide">
+                    <div class="cardapio-item">
+                        <img src="negroni.jpg" alt="Drink 2">
+                        <div class="item-overlay"><div class="item-text"><h3>Negroni</h3><span class="preco">R$ 32,00</span></div></div>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide">
+                    <div class="cardapio-item">
+                        <img src="frango.jpg" alt="Frango">
+                        <div class="item-overlay"><div class="item-text"><h3>Chicken Wings</h3><span class="preco">R$ 34,00</span></div></div>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide">
+                    <div class="cardapio-item">
+                        <img src="nachos.jpg" alt="Nachos">
+                        <div class="item-overlay"><div class="item-text"><h3>Nachos Supreme</h3><span class="preco">R$ 39,00</span></div></div>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    
+        <div class="cardapio-completo-container reveal-item">
+            <div class="categoria">
+                <h3>DRINKS & COPOS</h3>
+                <div class="menu-item"><span>Caipirinha de Limão</span> <b>R$ 25</b></div>
+                <div class="menu-item"><span>Mojito Refresh</span> <b>R$ 25</b></div>
+                <div class="menu-item"><span>Shot Tequila</span> <b>R$ 20</b></div>
+                <div class="menu-item"><span>Combo Red Label</span> <b>R$ 250</b></div>
+            </div>
+            <div class="categoria">
+                <h3>PORÇÕES & BURGUERS</h3>
+                <div class="menu-item"><span>Burguer Clássico</span> <b>R$ 30</b></div>
+                <div class="menu-item"><span>Nuggets (12 unid)</span> <b>R$ 25</b></div>
+                <div class="menu-item"><span>Tábua de Frios</span> <b>R$ 45</b></div>
+                <div class="menu-item"><span>Misto Quente</span> <b>R$ 15</b></div>
             </div>
         </div>
     </section>
@@ -70,8 +193,8 @@
         <div class="info-container">
             <div class="info-text">
                 <h2 class="reveal-item">SOBRE O BUB'S</h2>
-                <p class="reveal-item"><strong>O que é:</strong> O Bub's Bar é o epicentro da cultura urbana em Guarulhos. Um espaço pensado para unir a energia do Trap, Hip-Hop e a vida noturna em um ambiente exclusivo e imersivo.</p>
-                <p class="reveal-item"><strong>Nossa Essência:</strong> Nascemos da vontade de criar um refúgio para quem busca música de qualidade, drinks autorais e uma experiência que vai além de um simples bar.</p>
+                <p class="reveal-item"><strong>O que é:</strong> O Bub's Bar é o epicentro da cultura urbana em Guarulhos.</p>
+                <p class="reveal-item"><strong>Nossa Essência:</strong> Música de qualidade, drinks autorais e uma experiência imersiva.</p>
             </div>
             
             <div class="info-detalhes reveal-item">
@@ -80,9 +203,8 @@
                     <p>Rua Principal, 123 - Centro, Guarulhos - SP</p>
                 </div>
                 <div class="detalhe-item">
-                    <span>⏰ HORÁRIO DE ATENDIMENTO</span>
-                    <p>Quinta a Sábado: 21h às 05h</p>
-                    <p>Domingo: 18h às 00h</p>
+                    <span>⏰ HORÁRIO</span>
+                    <p>Sex e Sáb: 21h às 05h | Dom: 18h às 00h</p>
                 </div>
             </div>
         </div>
@@ -92,6 +214,22 @@
         <p class="reveal-item">© 2026 Bub's Bar - Guarulhos, SP</p>
     </footer>
 
+    <div id="modalCompra" class="modal-compra">
+        <div class="modal-content">
+            <span class="close-modal" id="btnFechar">&times;</span>
+            <h2 id="eventoNome">Finalizar Compra</h2>
+            <p id="eventoData" style="color: #888; margin-bottom: 20px;"></p>
+            <input type="text" placeholder="Seu Nome Completo">
+            <input type="email" placeholder="Seu E-mail">
+            <input type="text" placeholder="CPF">
+            <div style="text-align: left; margin-top: 15px; font-size: 14px;">
+                <p>Total: <span style="color: #ff0055; font-weight: bold;">R$ 30,00</span></p>
+            </div>
+            <button class="btn-finalizar" onclick="alert('Pedido enviado! Verifique seu e-mail.')">GERAR INGRESSO (PIX)</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
